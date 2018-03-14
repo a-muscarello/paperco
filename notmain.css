@@ -1,0 +1,178 @@
+body {
+	background-image: url(./images/trees.jpg);
+	width: auto;
+	height: auto;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+nav {
+    align-items: center;
+}
+
+/*#information {
+    padding: 5px;
+}*/
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.information a {
+    color: white;
+    margin: 50px 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+   /* border: 3px #bccdd1 solid;*/
+    align-items: center;
+    /*height:350px;*/
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:hover, a:active {
+    background-color: rgb(164, 219, 151);
+}
+
+/*.container {
+	display: flex;	
+
+}*/
+
+.show {
+	animation: fadeIn 3s forwards;	
+}
+
+.image_row {
+	width: 100%;
+	/*position: absolute;
+	bottom: 0;*/
+}
+
+img {
+	position: relative;
+	/*display: inline-block;*/
+	float: right;
+	width: 200px;
+	height: 200px;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+}
+
+p {
+	color: white;
+	font-size: 20px;
+	margin: 100px;
+}
+
+.hide {
+	animation: hide 600ms forwards;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes show {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes hide {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+/*.mainbox {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: flex-end;
+}*/
+
+#location {
+	position: relative;
+	top: 30px;
+	left: 30px;
+}
+
+.image-row {
+    display: flex;
+    width:40%;
+    height:300px;
+    flex-wrap: wrap;
+    background-image: cover;
+    position: relative;
+}
+
+/* images displayed in flexboxes of different sizes */
+.tree {
+    bottom: 10px;
+    right: 30px;
+    width:75%;
+}
+
+.nature {
+    top: 20px;
+    right: 20px;
+    width:50%;
+}
+
+.work {
+    top: -10px;
+    right: 50px;
+    width:40%;
+    opacity: 0.3;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 30%;
+  position: right;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
