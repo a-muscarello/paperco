@@ -14,7 +14,7 @@ let scroll = function(pixels, container) {
 	}
 }
 
-// the fadein/out effect occurs simultaneously
+// animation effect occurs simultaneously
 
 window.addEventListener('scroll', function() {
 	scroll (0, nature),
@@ -33,6 +33,7 @@ let newImages =
 	document.getElementById('set2').scrollHeight;
 	console.log(newImages);
 
+// timed animation
 
 window.addEventListener('scroll', function() {
 	scroll (204, bags),
