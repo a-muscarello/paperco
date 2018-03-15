@@ -1,4 +1,4 @@
-// images appear when scrolled //
+// images appear/disappear when scrolled //
 
 const nature = document.getElementById('nature');
 const tree = document.getElementById('tree');
@@ -14,13 +14,15 @@ let scroll = function(pixels, container) {
 	}
 }
 
+// the fadein/out effect occurs simultaneously
+
 window.addEventListener('scroll', function() {
 	scroll (0, nature),
 	scroll (0, tree), 
 	scroll (0, work)
 });
 
-// new scroll animation - from left to right //
+
 
 const bags = document.getElementById('bags');
 const wrap = document.getElementById('wrap');
