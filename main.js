@@ -35,7 +35,7 @@ let newImages =
 window.addEventListener('scroll', function() {
 	scroll (204, bags),
 	scroll (480, wrap), 
-	scroll (670, wood)
+	scroll (570, wood)
 });
 
 
